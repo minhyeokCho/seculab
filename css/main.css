@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* ============================== [ 공통 ] ========================================================================================== */
+section {padding: 140px 0;}
+.sec_tit {text-align: center;}
+.sec_tit h2 {font-size: 40px; font-weight: 700; line-height: 1.5; letter-spacing: -1.6px; color: #333;}
+.sec_tit h2 strong {color: #403789;}
+.sec_tit p {margin-top: 16px; color: #666; font-size: 20px; font-weight: 500; line-height: 1.6; letter-spacing: -0.4px;}
+.sec_tit span {display: block; font-size: 28px; line-height: 46px; font-weight: 600; letter-spacing: -0.56px; margin-bottom: 16px;}
+@media screen and (max-width:1200px) {
+	section {padding: 100px 0;}
+}
+
+@media screen and (max-width:768px) {
+	section {padding: 50px 0;}
+	.sec_tit h2 {font-size: 28px; line-height: 1.4; letter-spacing: -1.12px;}
+	.sec_tit p {font-size: 18px; line-height: 1.5; letter-spacing: -0.36px;}
+}
+/* ============================== [ section 01 ] ========================================================================================== */
+.sec_01 {padding: 0;}
+.main_slide .item {position: relative; min-height: 600px;}
+.main_slide .item .cont_wrap {position: absolute; left: 50%; top:50%; width: 100%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap:30px;}
+.main_slide .item .cont_wrap strong {color: #99F; font-size: 28px; font-weight: 600; letter-spacing: -0.56px;}
+.main_slide .item .cont_wrap h2 {font-size: 60px; font-weight: 700; letter-spacing: -2.4px; color: #fff;}
+.main_slide .item .cont_wrap p {font-size: 22px; line-height: 1.6; letter-spacing: -0.44px; color: #fff;}
+.main_slide .item .cont_wrap a {transition: .3s; padding: 15px 25px; border: 1px solid #DEDEDE; color: #fff; font-size: 18px; letter-spacing: -0.36px;}
+.main_slide .item .cont_wrap a:hover {border-color: #403789; background-color: #403789;}
+
+@media screen and (max-width:768px) {
+	.main_slide .item .cont_wrap {gap:22px;}
+	.main_slide .item .cont_wrap strong {font-size: 22px; letter-spacing: -0.44px;}
+	.main_slide .item .cont_wrap h2 {font-size: 32px; letter-spacing: -1.28px;}
+	.main_slide .item .cont_wrap p {font-size: 18px; letter-spacing: -0.54px;}
+	.main_slide .item .cont_wrap a {padding: 15px 25px; font-size: 16px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

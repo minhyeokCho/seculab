@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import url(setting.css);
+/* ************************************************************************************************************************************************************
+						《 공통 레이아웃 스타일 》
+************************************************************************************************************************************************************ */
+
+/*
+	z-index 위계
+
+	.site_wrap		999
+	#header			100
+	.quick_menu 		10
+	.float_wrap		10
+	팝업딤드		9990
+	팝업			9999
+*/
+
+/* ============================== [ 레이아웃 리셋 Layout Reset ] ========================================================================================== */
+/* Reset */
+html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+abbr,address,big,cite,code,del,dfn,font,figure,figcaption,img,ins,q,s,samp,small,strike,sub,sup,tt,var,
+b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {font:16px/1.2em 'Pretendard',sans-serif;}
+button,input,textarea {font:16px/1.2em 'Pretendard',sans-serif;}
+select {font:16px/1.2em 'Pretendard',sans-serif;}
+::selection {color:#fff; background-color:#403789;}
+.go_view {position:absolute; left:0; top:0; height:100%; width:100%;}
+figure img {display:block; width:100%; height:auto; object-fit:cover;}
+* {word-wrap:break-word; word-break:keep-all;}
+
+/* ============================== [ 공통레이아웃 ] ========================================================================================== */
+.inner {width:100%; max-width:1340px; margin:0 auto; padding:0 30px; box-sizing:border-box;}
+
+/* -------------------- #header ---------------------------------------- */
+#header {position:fixed; left:0; top:0; width:100%; border-bottom: 1px solid #666; background-color:transparent; box-sizing:border-box; z-index:100; transition: .3s;}
+#header .inner {display:flex; align-items: center;}
+#header h1 a {background: url(../images/common/logo.png) no-repeat 0 0; width: 170px; height: 40px; display: block; background-size: 100% auto; transition: .3s;}
+#header .menu_wrap {margin-left: auto; display: flex; align-items: center; justify-content: space-between;}
+#header .menu_wrap nav > ul {display: flex; gap:15px;}
+#header .menu_wrap .dept_01 > a {width: 100px; color: #fff; font-size: 18px; padding: 32px 0; display: block;}
+#header .menu_wrap .dept_01 ul {display: none;}
+#header .menu_wrap .btn_cs {background-color: #403789; padding: 14px 30px; font-size: 18px; font-weight: 500; line-height: 1.4; color: #fff; border-radius: 60px; display: block;}
+
+#header.fixed {box-shadow: 0 4px 8px rgba(0, 0, 0, .1); background-color: #fff;}
+#header.fixed h1 a {background-image: url(../images/common/logo_wh.png);}
+
+
+.m_menu {display: none;}
+
+
+
+
+
+
+
+
+
+
+
