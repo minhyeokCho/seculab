@@ -24,8 +24,8 @@ button,input,textarea {font:16px/1.2em 'Pretendard',sans-serif;}
 select {font:16px/1.2em 'Pretendard',sans-serif;}
 ::selection {color:#fff; background-color:#403789;}
 .go_view {position:absolute; left:0; top:0; height:100%; width:100%;}
-figure img {display:block; width:100%; height:auto; object-fit:cover;}
-* {word-wrap:break-word; word-break:keep-all;}
+figure img {display:block; width:100%; height:100%; object-fit:cover;}
+* {word-wrap:break-word; word-break:keep-all; box-sizing: border-box;}
 
 /* ============================== [ 공통레이아웃 ] ========================================================================================== */
 .inner {width:100%; max-width:1340px; margin:0 auto; padding:0 30px; box-sizing:border-box;}
@@ -33,26 +33,79 @@ figure img {display:block; width:100%; height:auto; object-fit:cover;}
 /* -------------------- #header ---------------------------------------- */
 #header {position:fixed; left:0; top:0; width:100%; border-bottom: 1px solid #666; background-color:transparent; box-sizing:border-box; z-index:100; transition: .3s;}
 #header .inner {display:flex; align-items: center;}
-#header h1 a {background: url(../images/common/logo.png) no-repeat 0 0; width: 170px; height: 40px; display: block; background-size: 100% auto; transition: .3s;}
+#header h1 a {background: url(../images/common/logo_wh.png) no-repeat 0 0; width: 170px; height: 40px; display: block; background-size: 100% auto; transition: .3s;}
 #header .menu_wrap {margin-left: auto; display: flex; align-items: center; justify-content: space-between;}
+#header .menu_wrap nav {margin-right: 30px;}
 #header .menu_wrap nav > ul {display: flex; gap:15px;}
-#header .menu_wrap .dept_01 > a {width: 100px; color: #fff; font-size: 18px; padding: 32px 0; display: block;}
+#header .menu_wrap .dept_01 > a {width: 100px; color: #fff; font-size: 18px; font-weight: 500; text-align: center; padding: 32px 0; display: block; transition: .3s;}
 #header .menu_wrap .dept_01 ul {display: none;}
-#header .menu_wrap .btn_cs {background-color: #403789; padding: 14px 30px; font-size: 18px; font-weight: 500; line-height: 1.4; color: #fff; border-radius: 60px; display: block;}
-
-#header.fixed {box-shadow: 0 4px 8px rgba(0, 0, 0, .1); background-color: #fff;}
-#header.fixed h1 a {background-image: url(../images/common/logo_wh.png);}
-
-
-.m_menu {display: none;}
+.btn_cs {background-color: #403789; padding: 14px 30px; font-size: 18px; font-weight: 500; line-height: 1.4; color: #fff; border-radius: 60px; display: inline-block;}
+#header .menu_wrap .btn_menu {display: none; width: 40px; height: 40px; background: url(../images/common/icon_menu.svg) no-repeat right center; transition: .3s;}
+#header .menu_wrap .btn_menu.active {background-image: url(../images/common/icon_close.svg);}
 
 
+.m_menu {display: none; position: fixed; left: 0; top: 80px; z-index: 101; width: 100%; height: calc(100vh - 80px); background-color: #fff;}
+.menu_inner {padding:5px 30px 30px 30px;}
+.menu_inner .dept_01 {border-bottom: 1px solid #DEDEDE;}
+.menu_inner li:last-child {border-bottom: none}
+.menu_inner .dept_01 > a {font-size: 22px;font-weight: 600; width: 100%; display: block; padding: 25px 0 15px; position: relative;}
+.menu_inner .dept_01 > a::after {display: block; content: ''; background: url(../images/common/icon_arr.svg) no-repeat; width: 10px; height: 6px; background-size: 100% auto; position: absolute; right: 0; top: 30px; transition: .3s;}
+.menu_inner .dept_01.active > a::after {transform: rotate(180deg);}
+.menu_inner .dept_02 {display: none; padding: 5px 0 25px;}
+.menu_inner .dept_02 li ~ li {margin-top: 12px;}
+.menu_inner .dept_02 li a {color: #666;}
+
+@media screen and (min-width:1201px) {
+	/* 고정 */
+	#header.fixed {background-color: #fff;}
+	#header.fixed h1 a {background-image: url(../images/common/logo.png);}
+	#header.fixed .menu_wrap .dept_01 > a {color: #403789;}
+}
+@media screen and (max-width:1200px) {
+	#header {background-color: #fff; border-bottom-color: #DEDEDE; height: 80px;}
+	#header .inner {height: 100%; justify-content: space-between;}
+	#header h1 a {background-image: url(../images/common/logo.png);}
+	#header .menu_wrap nav {display: none;}
+	#header .menu_wrap .btn_cs {display: none;}
+	#header .menu_wrap .btn_menu {display: block;}
+	.content {padding-top: 80px;}
+}
 
 
+/* ============================== [ floating ] ========================================================================================== */
+.btn_fixed{display: flex;flex-direction: column;position: fixed;z-index: 99;right: 20px;bottom: 20px;}
+.btn_fixed a{display: block;width: 60px;height: 60px;}
+.btn_fixed a + a{margin-top: 6px;}
+.btn_fixed a img{max-width: 100%;}
+@media screen and (max-width: 1200px) {
+	.btn_fixed{right: 10px;bottom: 10px;}
+}
 
-
-
-
-
-
-
+/* ============================== [ footer ] ========================================================================================== */
+#footer{padding-top: 70px;padding-bottom: 60px;background-color: #232323;}
+#footer *{color: #7c7c7c;line-height: 1.6em;letter-spacing: -0.04em;}
+#footer .contact{display: flex;justify-content: space-between;align-items: center;}
+#footer .contact .addr h4{font-size: 26px;font-weight: 500;}
+#footer .contact .addr p{margin-top: 8px;font-size: 16px;font-weight: 600;}
+#footer .contact ul{display: flex;}
+#footer .contact ul li{padding: 1px 0 1px 64px;background-repeat: no-repeat;background-position: left top;}
+#footer .contact ul li + li{margin-left: 40px;}
+#footer .contact ul li:nth-child(1){background-image: url("../images/main/icon_contact_01.svg");}
+#footer .contact ul li:nth-child(2){background-image: url("../images/main/icon_contact_02.svg");}
+#footer .contact ul li:nth-child(3){background-image: url("../images/main/icon_contact_03.svg");}
+#footer .contact ul li span{font-size: 16px;letter-spacing: -0.01em;}
+#footer .contact ul li strong{display: block;font-size: 16px;letter-spacing: -0.01em;color: #fff;}
+#footer .f_btm{display: flex;align-items: center;position: relative;margin-top: 40px;padding-top: 40px;border-top: 1px solid #7c7c7c;}
+#footer .f_btm .f_logo{width: 170px;}
+#footer .f_btm .f_logo img{max-width: 100%;}
+#footer .f_btm p{margin-left: 30px;font-size: 14px;letter-spacing: -0.01em;}
+#footer .f_btm a{display: inline-block;position: absolute;right: 0;top: 40px;padding: 6px 15px;border: 1px solid #7c7c7c;font-size: 14px;letter-spacing: -0.01em;}
+@media screen and (max-width: 1200px) {
+	#footer{padding-top: 40px;padding-bottom: 50px;}
+	#footer .contact{flex-direction: column;align-items: flex-start;}
+	#footer .contact ul{flex-direction: column;margin-top: 30px;}
+	#footer .contact ul li + li{margin-left: 0;margin-top: 40px;}
+	#footer .f_btm{flex-direction: column;align-items: flex-start;}
+	#footer .f_btm p{margin-left: 0;margin-top: 30px;}
+	#footer .f_btm a{position: static;margin-top: 30px;}
+}
