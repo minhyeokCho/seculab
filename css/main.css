@@ -90,7 +90,8 @@ section {padding: 140px 0;}
 /* ============================== [ section 04 ] ========================================================================================== */
 .pnr {position: relative;}
 .pnr_slide {margin-top: 60px;}
-.pnr_slide .item {width: 240px; height: 100px;}
+.pnr_slide .item .img {width: 100%;}
+.pnr_slide .item .img ~ .img {margin-top: 20px;}
 .pnr .arr_swiper .arr {position: absolute; bottom: 50%; transform: translateY(50%); width: 56px; height: 56px; color: #666666; background-color: #f8f8f8; border-radius: 50%; font-size: 18px;}
 .pnr .arr_swiper .arr.arr_prev {left: -86px;}
 .pnr .arr_swiper .arr.arr_next {right: -86px; transform:translateY(50%) rotateZ(180deg);}
@@ -100,9 +101,9 @@ section {padding: 140px 0;}
 	.pnr .arr_swiper .arr.arr_prev {margin-right: 5px;}
 	.pnr .arr_swiper .arr.arr_next {transform:rotateZ(180deg);}
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:1200px) {
 	.pnr_slide {margin-top: 40px;}
-	.pnr_slide .item {width: 69px; height: 28.75px;}
+	.pnr_slide .item .img ~ .img {margin-top: 6px;}
 }
 
 /* ============================== [ section 05 ] ========================================================================================== */
@@ -115,7 +116,8 @@ section {padding: 140px 0;}
 .noti_wrap .noti ul li{position: relative;padding-left: 8px;}
 .noti_wrap .noti ul li::before{display: block;content: '';position: absolute;top: 50%;left: 0;transform: translateY(-50%);width: 2px;height: 2px;border-radius: 50%;background-color: #333;}
 .noti_wrap .noti ul li + li{margin-top: 12px;}
-.noti_wrap .noti ul li a{overflow: hidden;display: block;max-width: 100%;font-size: 18px;color: #666;line-height: 1.5em;letter-spacing: -0.02em;text-overflow: ellipsis;white-space: nowrap;}
+.noti_wrap .noti ul li a{overflow: hidden;display: block;max-width: 100%;font-size: 18px;color: #666;line-height: 1.5em;letter-spacing: -0.02em;text-overflow: ellipsis;white-space: nowrap; }
+.noti_wrap .noti ul li a:hover {text-decoration: underline; text-underline-offset: 3px;}
 @media screen and (max-width: 1200px) {
 	.noti_wrap{flex-direction: column;}
 	.noti_wrap .noti{width: 100%}
