@@ -4,24 +4,13 @@
 						《 공통 레이아웃 스타일 》
 ************************************************************************************************************************************************************ */
 
-/*
-	z-index 위계
-
-	.site_wrap		999
-	#header			100
-	.quick_menu 		10
-	.float_wrap		10
-	팝업딤드		9990
-	팝업			9999
-*/
-
 /* ============================== [ 레이아웃 리셋 Layout Reset ] ========================================================================================== */
 /* Reset */
 html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
 abbr,address,big,cite,code,del,dfn,font,figure,figcaption,img,ins,q,s,samp,small,strike,sub,sup,tt,var,
-b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {font:16px/1.2em 'Pretendard',sans-serif;}
-button,input,textarea {font:16px/1.2em 'Pretendard',sans-serif;}
-select {font:16px/1.2em 'Pretendard',sans-serif;}
+b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {font:16px/1.2em 'Pretendard',sans-serif; letter-spacing: -0.3px;}
+button,input,textarea {font:16px/1.2em 'Pretendard',sans-serif; letter-spacing: -0.3px;}
+select {font:16px/1.2em 'Pretendard',sans-serif; letter-spacing: -0.3px;}
 ::selection {color:#fff; background-color:#403789;}
 .go_view {position:absolute; left:0; top:0; height:100%; width:100%;}
 figure img {display:block; width:100%; height:100%; object-fit:cover;}
@@ -57,7 +46,7 @@ body.no-scroll {overflow: hidden;}
 .menu_inner .dept_02 {display: none; padding: 5px 0 25px;}
 .menu_inner .dept_02 li ~ li {margin-top: 12px;}
 .menu_inner .dept_02 li a {color: #666;}
-.menu_inner .btn_cs {position: absolute; left: 30px; bottom: 30px;}
+.menu_inner .btn_cs {position: absolute; left: 30px; bottom: calc(30px + env(safe-area-inset-bottom));}
 .menu_bg {display: none; width: 100%; position: absolute; left: 0; top: 83px; height: 298px; background-color: #403789;}
 @media screen and (min-width:1201px) {
 	/* 고정 */
