@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SECULAB | 조직도</title>
+	<title>SECULAB | DDos 모의훈련</title>
 	<link rel="stylesheet" href="./css/lib/aos.css" />
 	<link rel="stylesheet" href="./css/lib/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./css/setting.css" />
@@ -137,81 +137,158 @@
 	</div>
 	<!--// 모바일 메뉴 -->
 
-  <main class="content">
-    <div class="sub_hero">
+  <main class="content sub_security">
+    <div class="sub_hero hero_security">
       <div class="inner">
-        <strong>ABOUT COMPANY</strong>
-        <h2>회사소개</h2>
+        <strong>SIMULATION</strong>
+        <h2>모의훈련</h2>
       </div>
     </div>
     <div class="sub_tab">
       <div class="inner">
         <ul>
-          <li><a href="intro.html">시큐랩 소개</a></li>
-          <li><a href="vision.html">비전 & 미션</a></li>
-          <li><a href="core.html">핵심 경쟁력</a></li>
-          <li><a href="chart.html" class="active">조직도</a></li>
-          <li><a href="history.html">주요 연혁</a></li>
-          <li><a href="map.html">오시는 길</a></li>
+          <li><a href="sec_ddos.html" class="active">DDos 모의훈련</a></li>
+          <li><a href="sec_mail.html">악성메일 모의훈련</a></li>
+          <li><a href="sec_smishing.html">스미싱 모의훈련</a></li>
         </ul>
       </div>
     </div>
     <section class="sub_section">
       <div class="inner">
-        <h2 class="page_title">조직도</h2>
+        <h2 class="page_title">DDos 모의훈련</h2>
+        <p class="desc">시큐랩은 실제 사이버 공격 환경을 반영한 실전형 보안 모의훈련 서비스를 통해 조직의 기술적 대응 능력과 사용자 보안 인식을 종합적으로 점검하고 개선합니다.</p>
       </div>
-      <div class="sub_intro org_chart">
+      <div class="security_intro sec_ddos">
         <div class="inner">
-          <h3>
-            “시큐랩은 보안 전문 인력을 중심으로 한 유기적인 조직 운영을 통해<br/><strong>안정적이고 신뢰할 수 있는 보안 서비스를 제공</strong>합니다.”
-          </h3>
-          <p>가장 완벽한 방어는 가장 혹독한 훈련에서 나옵니다.</p>
+          <h3>DDos 모의훈련 개요</h3>
+          <p>DDoS 모의훈련은 대규모 트래픽 유발 상황을 가정하여 정보시스템의 가용성 유지 능력과 대응 체계의 실효성을 검증하는 훈련입니다.<br/>㈜시큐랩은 내부 테스트 환경 또는 사전 협의된 범위 내에서 안전하고 통제된 방식으로 모의훈련을 수행합니다.</p>
         </div>
       </div>
       <div class="inner">
-        <div class="org_chart">
-          <div class="lv_01">
-            <div class="item">대표이사</div>
-          </div>
-          <div class="lv_02">
-            <div class="item"><p>보안사업본부</p></div>
-            <div class="item"><p>모의훈련 총괄(PM·책임자)</p></div>
-          </div>
-          <div class="lv_03">
+        <div class="security_item">
+          <h4>공격 유형 (L3 ~ L7)</h4>
+          <p>
+            · L3/L4 공격: SYN Flood, UDP Flood 등 네트워크·전송 계층 공격<br/>
+            · L7 공격: HTTP GET/POST Flood, 세션 점유형 공격 등 애플리케이션 계층 공격<br/>
+            · 시스템 구조와 서비스 특성에 따라 적합한 공격 유형을 선별하여 훈련을 구성합니다.
+          </p>
+        </div>
+        <div class="security_item">
+          <h4>훈련 시나리오</h4>
+          <p>공격 유형 및 강도 단계별 구성, 단일 공격 또는 복합 공격 탐지 → 차단 → 대응 절차 검증 훈련 목적에 따라 점진적 부하 방식 또는 집중 공격 방식으로 시나리오를 설계합니다.</p>
+        </div>
+        <div class="security_box">
+          <h4>훈련 구성도(내부망)</h4>
+          <div class="flow">
             <ul>
               <li>
-                <div class="item">시나리오·<br/>기획팀</div>
-                <div class="lv_04">디도스 시나리오 설계</div>
-                <div class="lv_04">공격 유형 정의<br/>(L3/L4, L7, Slowloris 등)</div>
-                <div class="lv_04">훈련 범위·시간·강도 설정</div>
+                <div class="item">
+                  <img src="./images/sub/flow_01.svg">
+                  <p>Internet Pipe</p>
+                </div>
+              </li>
+              <li class="type_02">
+                <div class="item">
+                  <img src="./images/sub/flow_02.svg">
+                  <p>Router</p>
+                </div>
+                <div class="item">
+                  <img src="./images/sub/flow_03.svg">
+                  <p>L2 Switch</p>
+                </div>
+                <div class="item">
+                  <img src="./images/sub/flow_04.svg">
+                  <p>공격장비</p>
+                </div>
               </li>
               <li>
-                <div class="item">공격<br/>시뮬레이션팀</div>
-                <div class="lv_04">디도스 트래픽 발생/제어</div>
-                <div class="lv_04">공격 도구 운영<br/>(자체 툴, 시뮬레이터)</div>
-                <div class="lv_04">공격 로그 수집</div>
+                <div class="item">
+                  <img src="./images/sub/flow_05.svg">
+                  <p>DDos</p>
+                </div>
               </li>
               <li>
-                <div class="item">관제·<br/>분석팀</div>
-                <div class="lv_04">실시간 트래픽/세션 모니터링</div>
-                <div class="lv_04">장비/서버 대응 여부 확인</div>
-                <div class="lv_04">탐지·차단 성능 분석</div>
+                <div class="item">
+                  <img src="./images/sub/flow_06.svg">
+                  <p>Firewall</p>
+                </div>
               </li>
               <li>
-                <div class="item">인프라·<br/>플랫폼팀</div>
-                <div class="lv_04">테스트 환경 구성</div>
-                <div class="lv_04">네트워크/서버 세팅</div>
-                <div class="lv_04">테스트 계정·IP·도메인 관리</div>
+                <div class="item">
+                  <img src="./images/sub/flow_07.svg">
+                  <p>IPS/IDS/DLP</p>
+                </div>
               </li>
               <li>
-                <div class="item">보고·
-                  컨설팅팀</div>
-                <div class="lv_04">결과 보고서 작성</div>
-                <div class="lv_04">취약점·개선사항 도출</div>
-                <div class="lv_04">대응 전략·정책 컨설팅</div>
+                <div class="item">
+                  <img src="./images/sub/flow_08.svg">
+                  <p>Load<br/>Balancer/ADC</p>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <img src="./images/sub/flow_09.svg">
+                  <p>WAF</p>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <img src="./images/sub/flow_10.svg">
+                  <p>Server<br/>(Target)</p>
+                </div>
               </li>
             </ul>
           </div>
+        </div>
+        <div class="security_item">
+          <h4>실시간 모니터링</h4>
+          <p>훈련 수행 중 트래픽 변화, 시스템 부하, 보안 장비 동작 상태를 실시간으로 모니터링하여 이상 징후 및 대응 현황을 즉시 확인합니다.</p>
+        </div>
+        <div class="security_item">
+          <h4>결과 분석 리포트</h4>
+          <p>
+            훈련 종료 후 다음 항목을 포함한 결과 리포트를 제공합니다.<br/>
+            <br/>
+            1. 공격 트래픽 및 영향도 분석<br/>
+            2. 탐지·차단 시점 및 대응 적정성<br/>
+            3. 개선 사항 및 권고 조치
+          </p>
+        </div>
+        <div class="security_box">
+          <h4>수행절차</h4>
+          <p class="desc">시큐랩의 DDos 모의훈련은 다음 단계로 진행됩니다.</p>
+          <div class="process">
+            <ul>
+              <li>
+                <img src="./images/sub/process_01.png">
+                <h5>사전 협의</h5>
+                <p>기관별 범위와<br/>목표 설정</p>
+              </li>
+              <li>
+                <img src="./images/sub/process_02.png">
+                <h5>공격 시나리오 설계</h5>
+                <p>최신 공격 유형 반영,<br/> 맞춤형 시나리오 작성</p>
+              </li>
+              <li>
+                <img src="./images/sub/process_03.png">
+                <h5>모의훈련 수행</h5>
+                <p>실제 트래픽 기반<br/>훈련 진행</p>
+              </li>
+              <li>
+                <img src="./images/sub/process_04.png">
+                <h5>훈련 결과 보고서 제공</h5>
+                <p>훈련 과정과 결과를 종합<br/>정리하여 제공</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="security_item">
+          <h4>기대효과</h4>
+          <p>
+            시큐랩의 DDoS 모의훈련은 단순한 공격 재현을 넘어, 기관의 보안 대응 체계와 운영프로세스를 실제 상황 속에서 점검할 수 있도록 지원합니다.<br/>
+            훈련을 통해 인프라의 취약점을 조기에 발견하고, 향후 대응 전략 수립에 필요한 개선 포인트를 명확히 도출할 수 있습니다.<br/>
+            또한 훈련 종료 후에는 위기 대응 과정과 결과를 분석한 리포트를 제공하여 기관 내부 보안정책 강화 및 예산•인력 계획 수립에 직접적으로 활용할 수 있습니다.
+          </p>
         </div>
       </div>
     </section>

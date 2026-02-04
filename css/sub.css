@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 /* ============================== [ 공통 ] ========================================================================================== */
-.sub_hero {padding-top: 205px; height: 520px; background: url(../images/sub/sub_hero.png) no-repeat center; background-size: cover; text-align: center;}
+.sub_hero {padding-top: 205px; height: 520px; background: url(../images/sub/sub_hero_intro.png) no-repeat center; background-size: cover; text-align: center;}
+.sub_hero.hero_security {background-image: url(../images/sub/sub_hero_security.png);}
 .sub_hero strong {color: #9999FF; font-size: 28px; font-weight: 600; display: block;}
 .sub_hero h2 {font-size: 60px; color: #fff; font-weight: 700; line-height: 1.3; margin-top: 30px;}
 
@@ -13,6 +14,8 @@
 
 .sub_section {padding: 120px 0;}
 .page_title {margin-bottom: 40px; font-size: 40px; font-weight: 700; color: #333; line-height: 1.5;}
+.page_title ~ .desc {margin-top: 16px; font-weight: 500; font-size: 20px; color: #666;}
+.page_title:has(+ .desc) {margin-bottom: 0;}
 .sub_intro {min-height: 360px; text-align: center; margin-bottom: 60px;}
 .sub_intro.tl {text-align: left;}
 .sub_intro .inner {display: flex; flex-direction: column; justify-content: center; height: 100%; min-height: 360px;}
@@ -40,6 +43,7 @@
   .sub_hero strong {font-size: 20px;}
   .sub_hero h2 {font-size: 30px; margin-top: 15px;}
   .sub_tab {margin-top: -86px;}
+  .sub_security .sub_tab {margin-top: -44px;}
   .sub_tab .inner {padding: 0;}
   .sub_tab .inner ul li {flex:none; width: 33.33%;}
   .sub_tab .inner ul li a {font-size: 14px; padding: 12px 0;}
@@ -83,7 +87,7 @@
 .mission .txt_wrap p {font-size: 20px; margin-top: 20px; font-weight: 500; color: #666;}
 .mission ul {margin-top: 40px; display: flex; flex-wrap: wrap; gap:24px;}
 .mission ul li {flex:1; text-align: center;}
-.mission ul li i {display: block; width: 120px; height: 120px; margin: 0 auto; background-position: center; background-size: 100% auto; background-position: center; background-repeat: no-repeat;}
+.mission ul li i {display: block; width: 120px; height: 120px; margin: 0 auto; background-position: center; background-size: 100% auto; background-repeat: no-repeat;}
 .mission ul li:nth-child(1) i {background-image: url(../images/sub/mission_01.svg);}
 .mission ul li:nth-child(2) i {background-image: url(../images/sub/mission_02.svg);}
 .mission ul li:nth-child(3) i {background-image: url(../images/sub/mission_03.svg);}
@@ -137,7 +141,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  .core_li li  {width: 100%;}
+  .core_li li {width: 100%;}
 }
 
 /* ============================== [ 조직도 ] ========================================================================================== */
@@ -159,7 +163,7 @@
 .org_chart .lv_03 {margin-top: 46px; width: 100%;}
 .org_chart .lv_03 ul {display: flex; justify-content: space-between; flex-wrap: wrap;}
 .org_chart .lv_03 ul li { position: relative; width: 210px;}
-.org_chart .lv_03 ul li .item {width: 120px; height: 120px; border-radius: 50%; background-color: rgba(88, 76, 186, 0.75); margin: 0 auto 98px; color: #fff; font-size: 18px; line-height: 1.5; display: flex; align-items: center; justify-content: center; color: #fff; text-align: center; position: relative;}
+.org_chart .lv_03 ul li .item {width: 120px; height: 120px; border-radius: 50%; background-color: rgba(88, 76, 186, 0.75); margin: 0 auto 98px; font-size: 18px; line-height: 1.5; display: flex; align-items: center; justify-content: center; color: #fff; text-align: center; position: relative;}
 .org_chart .lv_03 ul li .item::after {display: block; content: ''; width: 1px; height: 56px; background-color: #c8c8c8; position: absolute; left: calc(50% - 0.5px); top: calc(100% + 18px);}
 .org_chart .lv_03 ul li .item::before {display: block; content: ''; width: 10px; height: 10px; background-color: #403789; border-radius: 50%; position: absolute;  top: calc(100% + 18px + 56px); left: calc(50% - 5px);}
 .org_chart .lv_03 ul li .lv_04 {width: 100%; height: 64px; display: flex; align-items: center; justify-content: center; text-align: center; border:1px solid #403789; border-radius: 80px;}
@@ -236,4 +240,107 @@
   .map_area {height: 300px;}
   .map_info address {margin-top: 20px; font-size: 22px;}
   .map_info p {font-size: 16px;}
+}
+
+/* ============================== [ 모의훈련 ] ========================================================================================== */
+.security_intro {margin: 40px 0; background-color: #F8F8F8; padding: 60px 0; text-align: center;}
+.security_intro h3 {font-size: 32px; font-weight: 700; padding-top: 130px; background-position: top center; background-repeat: no-repeat; background-size: 100px auto;}
+.security_intro.sec_ddos h3 {background-image: url(../images/sub/icon_security_01.png);}
+.security_intro.sec_mail h3 {background-image: url(../images/sub/icon_security_02.png);}
+.security_intro.sec_smishing h3 {background-image: url(../images/sub/icon_security_03.png);}
+.security_intro p {font-size: 20px;line-height: 1.6; color: #666;margin-top: 20px; font-weight: 500;}
+.security_intro p strong {color: #403789;}
+.security_item ~ .security_item {margin-top: 40px;}
+.security_item h4 {font-size: 28px; font-weight: 600; color: #403789;}
+.security_item p {font-size: 18px; line-height: 1.5; color: #666; margin-top: 20px;}
+.security_item ul li {margin-top: 20px;}
+.security_item ul li strong {font-weight: 500; font-size: 18px; line-height: 1.4;}
+.security_item ul li p {margin-top: 6px; color: #333; padding-left: 8px;}
+
+.security_box {margin-top: 40px; padding: 30px; background-color: #F8F8F8;}
+.security_box h4 {padding: 10px 20px; font-size: 18px; line-height: 1.4; color: #fff; font-weight: 500; background-color: #403789; border-radius: 60px; display: inline-block;}
+.security_box .desc {margin-top: 12px; font-size: 18px; line-height: 1.5; color: #666;}
+.security_box .flow {margin-top: 30px;}
+.security_box .flow ul {display: flex;}
+.security_box .flow ul li {flex:1; text-align: center;}
+.security_box .flow ul li ~ li {position: relative;}
+.security_box .flow ul li ~ li::after {display: block; content: ''; width: 40px; border-top:2px dashed #a6a6a6; position: absolute; left: -20px; top: 34px;}
+.security_box .flow ul li p {color: #403789; font-weight: 600; line-height: 1.3; margin-top: 10px; text-align: center;}
+.security_box .flow ul li .item ~ .item {padding-top: 40px; position: relative;}
+.security_box .flow ul li .item ~ .item::after {display: block; content: ''; height: 20px; border-left:2px dashed #a6a6a6; position: absolute; top: 10px; left: 50%;}
+
+.security_box .process {margin-top: 30px;}
+.security_box .process ul {display: flex; justify-content: center; align-items: flex-start;}
+.security_box .process ul li {width: 100%; max-width: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;}
+.security_box .process ul li ~ li {margin-left: 86px; position: relative;}
+.security_box .process ul li ~ li::after {display: block; content: ''; width: 30px; height: 30px; background: url(../images/sub/arrow_d.png) no-repeat center; background-size: 100% auto; position: absolute; top: 85px; left: -58px;}
+.security_box .process ul li img {display: block; width: 100%; height: auto;}
+.security_box .process ul li h5 {margin-top: 20px; font-size: 18px; line-height: 1.4; color: #403789; font-weight: 600;}
+.security_box .process ul li p {margin-top: 4px; color: #666; font-weight: 600; line-height: 1.6;}
+
+@media screen and (max-width: 1200px) {
+  .security_box {padding: 20px;}
+  .security_box .flow ul li ~ li::after {width: 20px; left: -10px;}
+}
+@media screen and (max-width: 1024px) {
+  .security_box .flow ul {flex-direction: column; justify-content: flex-start;}
+  .security_box .flow ul li ~ li {padding-top: 30px;}
+  .security_box .flow ul li ~ li::after {width: 1px; height: 15px; border-left:2px dashed #a6a6a6; border-top: none; left: 50%; top: 5px;}
+  .security_box .flow ul li .item ~ .item {padding: 0 0 0 30px;}
+  .security_box .flow ul li .item ~ .item::after {width: 15px; height: 1px; border-top:2px dashed #a6a6a6; border-left: none; top: inherit; bottom: 60px; left: 5px;}
+  .security_box .flow ul li.type_02 {display: flex; align-items: flex-end; justify-content: center;}
+  .security_box .process ul li ~ li {margin-left: 50px;}
+  .security_box .process ul li ~ li::after {left: -42px; top: 60px;}
+  .security_box .process ul li h5 {font-size: 14px;}
+  .security_box .process ul li p {font-size: 14px;}
+}
+@media screen and (max-width: 768px) {
+  .security_item h4 {font-size: 22px;}
+  .security_item p {font-size: 16px; line-height: 1.4; margin-top: 10px;}
+  .security_box .desc {font-size: 16px;}
+  .security_intro {margin: 30px 0; padding: 40px 0;}
+  .security_intro h3 {font-size: 28px; padding-top: 100px; background-size: 80px;}
+  .security_intro p {font-size: 18px; line-height: 1.4;}
+  .security_item ~ .security_item {margin-top: 30px;}
+  .security_box .process ul {flex-direction: column; align-items: center;}
+  .security_box .process ul li {max-width: 150px;}
+  .security_box .process ul li img {max-width: 120px;}
+  .security_box .process ul li ~ li {margin: 60px 0 0 0;}
+  .security_box .process ul li ~ li::after {transform: rotate(90deg); left: calc(50% - 15px); top: -40px;}
+  .security_box .process ul li h5 {font-size: 16px;}
+  .security_box .process ul li p {font-size: 16px;}
+}
+
+.mail_li {margin-top: 40px; display: flex; flex-wrap: wrap; gap:30px;}
+.mail_li li {width: calc(33.33% - 20px); border-top:2px solid #403789; padding: 32px 28px;}
+.mail_li li i {display: block; margin: 0 auto; width: 80px; height: 80px; background-position: center; background-repeat: no-repeat; background-size: 100% auto;}
+.mail_li li:nth-child(1) i {background-image: url(../images/sub/mail_01.svg);}
+.mail_li li:nth-child(2) i {background-image: url(../images/sub/mail_02.svg);}
+.mail_li li:nth-child(3) i {background-image: url(../images/sub/mail_03.svg);}
+.mail_li li:nth-child(4) i {background-image: url(../images/sub/mail_04.svg);}
+.mail_li li:nth-child(5) i {background-image: url(../images/sub/mail_05.svg);}
+.mail_li li:nth-child(6) i {background-image: url(../images/sub/mail_06.svg);}
+.mail_li li h3 {margin-top: 20px; font-size: 22px; line-height: 1.5; font-weight: 700; text-align: center;}
+.mail_li li p {margin-top: 20px; font-size: 18px; color: #666; line-height: 1.5;}
+
+.security_svc {margin-top: 40px;}
+.security_svc h4 {font-size: 28px; font-weight: 600; color: #403789;}
+.security_svc ul li {padding: 30px; margin-top: 20px; gap:20px; display: flex; align-items: flex-start; background-color: #F8F8F8;}
+.security_svc ul li h5 {padding: 10px 0; width: 300px; border-radius: 60px; background-color: #403789; color: #fff; text-align: center; font-weight: 600;}
+.security_svc ul li p {font-size: 18px; flex:1; line-height: 1.5;}
+
+@media screen and (max-width: 1024px) {
+  .mail_li li p br {display: none;}
+  .security_svc ul li {flex-direction: column;}
+}
+@media screen and (max-width: 768px) {
+  .mail_li {margin-top: 30px; gap:20px;}
+  .mail_li li {width: calc(50% - 10px); padding: 20px 5px;}
+  .security_svc h4 {font-size: 22px;}
+  .security_svc ul li {padding: 20px 15px;}
+  .security_svc ul li h5 {width: 100%; font-size: 15px; text-align: left; padding: 10px 14px;}
+}
+
+@media screen and (max-width: 500px) {
+  .mail_li li {width: 100%;}
 }
