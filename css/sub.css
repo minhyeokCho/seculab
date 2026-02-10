@@ -408,3 +408,47 @@
   .detail_wrap .page_list > div span {font-size: 14px; padding-left: 15px;}
   .detail_wrap .page_list > div a {font-size: 14px; padding: 10px 5px 10px 0;}
 }
+
+
+/* ============================== [ CONTACT ] ========================================================================================== */
+.ess {color: #403789;}
+.form_essential {background-color: #F2F7FE; margin-bottom: 48px; padding: 24px; border-radius: 12px; display: flex; align-items: center; gap:8px;}
+.form_essential p {font-weight: 500; font-size: 18px;}
+
+.form-box ul {display: flex; flex-wrap: wrap; gap:64px 32px;}
+.form-box ul > li {width: calc(50%  - 16px);}
+.form-box ul > li.w100 {width: 100%;}
+
+
+.form-box-title {font-size: 18px; font-weight: 700; margin-bottom: 16px; display: inline-flex; align-items: center; gap:8px;}  
+
+.form-box-input input,
+.form-box-input select {width: 100%; height: 64px; padding: 0 24px; border-radius: 12px; border:1px solid #D3D3D3; font-size: 18px;}
+.form-box-input.with-select {display: flex; gap:8px 24px; flex-wrap: wrap;}
+.input-wrap textarea {width: 100%; height: 240px; padding: 24px; border-radius: 12px; border:1px solid #D3D3D3; resize: none;}
+
+.select-wrap select {padding-right: 40px; background-color: transparent; cursor: pointer;}
+.select-wrap {position: relative;}
+.select-wrap::after {display: block; content: ''; background: url(../images/common/icon_arr.svg) no-repeat; width: 10px; height: 6px; position: absolute; right: 20px; top: calc(50% - 3px);}
+.select-wrap.w48 {width: 350px;}
+.select-wrap.w48 ~ input {flex:1;}
+.form-box-input .privacy {line-height: 1.5; font-size: 14px; background-color: #FAFAFA; width: 100%; padding: 24px; border-radius: 12px; border:1px solid #D3D3D3}
+
+.check-wrap {margin-top: 24px;}
+.check-wrap span {display: flex; align-items: center; justify-content: flex-end; cursor: pointer;}
+.check-wrap input[type="checkbox"] {width: 16px; height: 16px; padding-right: 8px; cursor: pointer;}
+.check-wrap label {cursor: pointer; padding-left: 8px;}
+.check-wrap label b {font-size: 18px; font-weight: 700;}
+@media screen and (max-width: 768px) {
+  .form-box ul {gap:32px;}
+  .form-box ul > li {width: 100%}
+  .form-box-input input,
+  .form-box-input select {height: 56px; font-size: 16px;}
+  .select-wrap.w48 {width: 100%;}
+  .select-wrap.w48 ~ input {flex:none; width: 100%;}
+  .form-box-title {font-size: 16px;}
+}
+
+/* ============================== [ partner ] ========================================================================================== */
+.partner_list ul {display: flex; flex-wrap: wrap; gap:32px 24px;}
+.partner_list ul li {width: calc(25% - 18px); border-radius: 12px; overflow: hidden; height: 100px; border:1px solid #D3D3D3; display: flex; align-items: center; justify-content: center;}

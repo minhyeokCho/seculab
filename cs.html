@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SECULAB | 상담예약</title>
+	<link rel="stylesheet" href="./css/lib/aos.css" />
+	<link rel="stylesheet" href="./css/lib/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./css/setting.css" />
+	<link rel="stylesheet" href="./css/common.css" />
+	<link rel="stylesheet" href="./css/sub.css" />
+	<script src="./js/lib/jquery-3.6.0.min.js"></script>
+	<script src="./js/lib/aos.js"></script>
+	<script src="./js/lib/swiper-bundle.min.js"></script>
+	<script src="./js/common.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<!-- 헤더 영역-->
+	<header id="header">
+		<div class="inner">
+			<h1>
+				<a href="#"><span class="blind">SECULAB</span></a>
+			</h1>
+			<div class="menu_wrap">
+				<nav>
+					<ul>
+						<li class="dept_01">
+							<a href="#">회사소개</a>
+							<ul class="dept_02">
+								<li><a href="intro.html">시큐랩 소개</a></li>
+								<li><a href="vision.html">비전 & 미션</a></li>
+								<li><a href="core.html">핵심 경쟁력</a></li>
+								<li><a href="chart.html">조직도</a></li>
+								<li><a href="history.html">주요 연혁</a></li>
+								<li><a href="map.html">오시는 길</a></li>	
+							</ul>
+						</li>
+						<li class="dept_01">
+							<a href="#">모의훈련</a>
+							<ul class="dept_02">
+                <li><a href="sec_ddos.html">DDos 모의훈련</a></li>
+                <li><a href="sec_mail.html">악성메일 모의훈련</a></li>
+                <li><a href="sec_smishing.html">스미싱 모의훈련</a></li>
+							</ul>
+						</li>
+						<li class="dept_01">
+							<a href="#">구축사례</a>
+							<ul class="dept_02">
+								<li><a href="#">공공기관</a></li>
+								<li><a href="#">금융권</a></li>
+								<li><a href="#">기업</a></li>
+								<li><a href="#">파트너</a></li>
+							</ul>
+						</li>
+						<li class="dept_01">
+							<a href="#">공지/소식</a>
+							<ul class="dept_02">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">뉴스 / 보도자료</a></li>
+								<li><a href="#">보안 동향</a></li>
+								<li><a href="#">세미나 / 행사안내</a></li>
+							</ul>
+						</li>
+						<li class="dept_01">
+							<a href="#">제품문의</a>
+							<ul class="dept_02">
+								<li><a href="#">제품 문의</a></li>
+								<li><a href="#">데모 요청</a></li>
+								<li><a href="#">모의훈련 상담</a></li>
+								<li><a href="#">제휴 문의</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<a href="#" class="btn_cs">상담신청</a>
+				<a href="#" class="btn_menu"><span class="blind">모바일 메뉴 버튼</span></a>
+			</div>
+		</div>
+		<div class="menu_bg"></div>
+	</header>
+	<!--// 헤더 영역-->
+
+	<!-- 모바일 메뉴 -->
+	<div class="m_menu">
+		<div class="menu_inner">
+			<ul>
+				<li class="dept_01">
+					<a href="#">회사소개</a>
+					<ul class="dept_02">
+						<li><a href="intro.html">시큐랩 소개</a></li>
+						<li><a href="vision.html">비전 & 미션</a></li>
+						<li><a href="core.html">핵심 경쟁력</a></li>
+						<li><a href="chart.html">조직도</a></li>
+						<li><a href="history.html">주요 연혁</a></li>
+						<li><a href="map.html">오시는 길</a></li>
+					</ul>
+				</li>
+				<li class="dept_01">
+					<a href="#">모의훈련</a>
+					<ul class="dept_02">
+            <li><a href="sec_ddos.html">DDos 모의훈련</a></li>
+            <li><a href="sec_mail.html">악성메일 모의훈련</a></li>
+            <li><a href="sec_smishing.html">스미싱 모의훈련</a></li>
+					</ul>
+				</li>
+				<li class="dept_01">
+					<a href="#">구축사례</a>
+					<ul class="dept_02">
+						<li><a href="#">공공기관</a></li>
+						<li><a href="#">금융권</a></li>
+						<li><a href="#">기업</a></li>
+						<li><a href="#">파트너</a></li>
+					</ul>
+				</li>
+				<li class="dept_01">
+					<a href="#">공지/소식</a>
+					<ul class="dept_02">
+						<li><a href="#">공지사항</a></li>
+						<li><a href="#">뉴스 / 보도자료</a></li>
+						<li><a href="#">보안 동향</a></li>
+						<li><a href="#">세미나 / 행사안내</a></li>
+					</ul>
+				</li>
+				<li class="dept_01">
+					<a href="#">제품문의</a>
+					<ul class="dept_02">
+						<li><a href="#">제품 문의</a></li>
+						<li><a href="#">데모 요청</a></li>
+						<li><a href="#">모의훈련 상담</a></li>
+						<li><a href="#">제휴 문의</a></li>
+					</ul>
+				</li>
+			</ul>
+			<a href="#" class="btn_cs">상담신청</a>
+		</div>
+	</div>
+	<!--// 모바일 메뉴 -->
+
+  <main class="content">
+    <section class="sub_section">
+      <div class="inner">
+        <h2 class="page_title">CONTACT</h2>
+        <div class="form_essential">
+          <span class="ess">*</span>
+          <p>는 필수 입력 항목입니다.</p>
+        </div>
+        <div class="form-box">
+          <ul>
+            <li>
+              <div>
+                <strong class="form-box-title">
+                  성명
+                  <span class="ess">*</span>
+                </strong>
+                <div class="form-box-input">
+                  <span class="input-wrap">
+                    <input type="text" name="name" value="" id="name">      
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong class="form-box-title">
+                  전화번호
+                  <span class="ess">*</span>
+                </strong>
+                <div class="form-box-input">
+                  <span class="input-wrap">
+                    <input type="text" name="tel" value="" placeholder="000-0000-0000" id="tel">      
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong class="form-box-title">
+                  이메일주소
+                  <span class="ess">*</span>
+                </strong>
+                <div class="form-box-input">
+                  <span class="input-wrap">
+                    <input type="text" name="email" value="" placeholder="id@email.com" id="email">      
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong class="form-box-title">
+                  회사명/소속기관명
+                  <span class="ess">*</span>
+                </strong>
+                <div class="form-box-input">
+                  <span class="input-wrap">
+                    <input type="text" name="company" value="" placeholder="ex) 시큐랩" id="company">      
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong class="form-box-title">소속 산업군<span class="ess">*</span></strong>
+                <div class="form-box-input">
+                  <span class="select-wrap">
+                    <select title="선택하세요">
+                      <option>[선택하세요]</option>
+                      <option value="제조업">제조업</option>
+                      <option value="건설업">건설업</option>
+                      <option value="운송업">운송업</option>
+                      <option value="금융기관">금융기관</option>
+                      <option value="정보통신">정보통신</option>
+                      <option value="서비스업">서비스업</option>
+                      <option value="교육기관">교육기관</option>
+                      <option value="공공기관">공공기관</option>
+                      <option value="의료기관">의료기관</option>
+                      <option value="기타">기타</option>
+                    </select>
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong class="form-box-title">소속 회사규모<span class="ess">*</span></strong>
+                <div class="form-box-input">
+                  <span class="select-wrap">
+                    <select name="scale" id="scale" title="선택하세요">
+                      <option value="">[선택하세요]</option>
+                      <option value="10인 인하">10인 이하</option>
+                      <option value="50인 이하">50인 이하</option>
+                      <option value="100인 이하">100인 이하</option>
+                      <option value="500인 이하">500인 이하</option>
+                      <option value="501명 이상">501명 이상</option>
+                    </select>
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="w100">
+              <div class="route">
+                <strong class="form-box-title">주식회사 시큐랩을 어떤 경로로 알게 되셨나요?<span class="ess">*</span></strong>
+                <div class="form-box-input with-select">
+                  <span class="select-wrap w48">
+                    <select name="path" id="path" title="선택하세요">
+                      <option value="">[선택하세요]</option>
+                      <option value="홈페이지">홈페이지</option>
+                      <option value="인터넷검색">인터넷검색</option>
+                      <option value="배너광고">배너광고</option>
+                      <option value="블로그">블로그</option>
+                      <option value="SNS">SNS</option>
+                      <option value="지인소개">지인소개</option>
+                      <option value="etc">기타</option>
+                    </select>
+                  </span>
+                  <input type="text" disabled>
+                </div>
+              </div>
+            </li>
+            <li class="w100">
+              <div>
+                <strong class="form-box-title">문의사항<span class="ess">*</span></strong>
+                <div class="form-box-input">
+                  <span class="input-wrap">
+                    <textarea name="contents" id="contents" cols="30" rows="10"></textarea>
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="w100">
+              <div>
+                <strong class="form-box-title">개인정보 수집 동의<span class="ess">*</span></strong>
+                <div class="form-box-input">
+                  <div class="privacy">
+                    벨로크는 하기 업무 처리를 위해 정보추체의 개인정보수집 동의를 받고자 합니다. 아래 내용을 자세히 읽으신 후 동의 여부를 결정하여 주십시오.<br><br>
+                    개인정보 수집· 이용 목적 : 문의하기 및 상담 예약하기<br>
+                    개인정보의 항목 : 성명, 전화번호, 이메일, 회사명<br>
+                    개인정보의 보유 및 이용기간 : 동의일로부터 3년<br>
+                    정보주체는 개인정보의 수집 · 이용 동의를 거부할 수 있으며, 이 경우 이용목적이 불가능 합니다.<br>
+                    ※ 정보주체가 만 14세 미만일 경우 접수가 불가능합니다.      
+                  </div>
+                </div>
+                <div class="check-wrap">
+                  <span>
+                    <input type="checkbox" id="agree1" name="agree1" value="y">
+                    <label for="agree1"><b>개인정보 수집에 동의합니다.</b></label>
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="partner_list">
+          <ul>
+            <li>
+              <figure class="img">
+                <img src="./images/sub/customer-logo1.png">
+              </figure>
+            </li>
+            <li>
+              <figure class="img">
+                <img src="./images/sub/customer-logo2.png">
+              </figure>
+            </li>
+            <li>
+              <figure class="img">
+                <img src="./images/sub/customer-logo3.png">
+              </figure>
+            </li>
+            <li>
+              <figure class="img">
+                <img src="./images/sub/customer-logo4.png">
+              </figure>
+            </li>
+            <li>
+              <figure class="img">
+                <img src="./images/sub/customer-logo5.png">
+              </figure>
+            </li>
+            <li>
+              <figure class="img">
+                <img src="./images/sub/customer-logo6.png">
+              </figure>
+            </li>
+            <li>
+              <figure class="img">
+                <img src="./images/sub/customer-logo7.png">
+              </figure>
+            </li>
+            <li>
+              <figure class="img">
+                <img src="./images/sub/customer-logo8.png">
+              </figure>
+            </li>
+            <li>
+              <figure class="img">
+                <img src="./images/sub/customer-logo9.png">
+              </figure>
+            </li>
+            <li>
+              <figure class="img">
+                <img src="./images/sub/customer-logo10.png">
+              </figure>
+            </li>
+            <li>
+              <figure class="img">
+                <img src="./images/sub/customer-logo11.png">
+              </figure>
+            </li>
+            <li>
+              <figure class="img">
+                <img src="./images/sub/customer-logo12.png">
+              </figure>
+            </li>
+            <li>
+              <figure class="img">
+                <img src="./images/sub/customer-logo13.png">
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+	<!-- 플로팅버튼 -->
+	<div class="btn_fixed">
+		<a href="#"><img src="./images/common/icon_naver.svg" alt="네이버 블로그"></a>
+		<a href="#"><img src="./images/common/icon_Instargram.svg" alt="인스타그램"></a>
+		<a href="#"><img src="./images/common/icon_facebook.svg" alt="페이스북"></a>
+		<a href="#"><img src="./images/common/icon_youtube.svg" alt="유투브"></a>
+		<a href="#" class="btn_top"><img src="./images/common/btn_top.svg" alt="상단으로 이동"></a>
+	</div>
+	<!--// 플로팅버튼 -->
+
+	<!-- 푸터 영역 -->
+	<footer id="footer">
+		<div class="inner">
+			<div class="contact">
+				<div class="addr">
+					<h4>Contact us</h4>
+					<p>
+						경기도 용인시 기흥구 공세로 150-29, 비오1-지159(공세동)<br/>사업자등록번호 576-88-03287(대표이사 최현정)
+					</p>
+				</div>
+				<ul>
+					<li>
+						<span>대표전화</span>
+						<strong>031-338-7931</strong>
+					</li>
+					<li>
+						<span>팩스번호</span>
+						<strong>031-338-7932</strong>
+					</li>
+					<li>
+						<span>E-mail</span>
+						<strong>choi@securelab.co.kr</strong>
+					</li>
+				</ul>
+			</div>
+			<div class="f_btm">
+				<div class="f_logo"><img src="./images/common/logo_wh.png " alt="seculab"/></div>
+				<p>COPYRIGHT © 2026 SECULAB Co., Ltd. ALL RIGHTS RESERVED.</p>
+				<div class="f_btn_wrap">
+				  <a href="#">개인정보처리방침</a>
+          <div class="f_select_wrap">
+            <select>
+              <option value="">솔루션 홈페이지</option>
+              <option value="">솔루션 홈페이지1</option>
+              <option value="">솔루션 홈페이지2</option>
+              <option value="">솔루션 홈페이지3</option>
+            </select>
+          </div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--// 푸터 영역 -->
+</div>
+<script> 
+	AOS.init();
+</script>
+</body>
+</html>

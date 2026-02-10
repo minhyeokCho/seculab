@@ -43,10 +43,10 @@ body.no-scroll {overflow: hidden;}
 .menu_inner .dept_01 > a {font-size: 22px;font-weight: 600; width: 100%; display: block; padding: 25px 0 15px; position: relative;}
 .menu_inner .dept_01 > a::after {display: block; content: ''; background: url(../images/common/icon_arr.svg) no-repeat; width: 10px; height: 6px; background-size: 100% auto; position: absolute; right: 0; top: 30px; transition: .3s;}
 .menu_inner .dept_01.active > a::after {transform: rotate(180deg);}
-.menu_inner .dept_02 {display: none; padding: 5px 0 25px;}
-.menu_inner .dept_02 li ~ li {margin-top: 12px;}
+.menu_inner .dept_02 {display: none; padding: 5px 0 15px;}
+.menu_inner .dept_02 li ~ li {margin-top: 6px;}
 .menu_inner .dept_02 li a {color: #666;}
-.menu_inner .btn_cs {position: absolute; left: 30px; bottom: calc(30px + env(safe-area-inset-bottom));}
+.menu_inner .btn_cs {position: absolute; left: 30px; bottom: calc(60px + env(safe-area-inset-bottom));}
 .menu_bg {display: none; width: 100%; position: absolute; left: 0; top: 83px; height: 298px; background-color: #403789;}
 @media screen and (min-width:1201px) {
 	/* 고정 */
@@ -101,7 +101,11 @@ body.no-scroll {overflow: hidden;}
 #footer .f_btm .f_logo{width: 170px;}
 #footer .f_btm .f_logo img{max-width: 100%;}
 #footer .f_btm p{margin-left: 30px;font-size: 14px;letter-spacing: -0.01em;}
-#footer .f_btm a{display: inline-block;position: absolute;right: 0;top: 40px;padding: 6px 15px;border: 1px solid #7c7c7c;font-size: 14px;letter-spacing: -0.01em;}
+#footer .f_btm .f_btn_wrap {display: flex; margin-left: auto; gap:8px;}
+#footer .f_btm a{display: inline-block;width: 140px; height: 36px; padding: 6px 15px;border: 1px solid #7c7c7c;font-size: 14px;letter-spacing: -0.01em;}
+#footer .f_btm .f_select_wrap {position: relative; width: 140px; height: 36px;}
+#footer .f_btm .f_select_wrap::after {display: block; content: ''; background: url(../images/common/icon_arr_wh.svg) no-repeat center; width: 10px; height: 6px; background-size: 100% auto; position: absolute; right: 10px; top: calc(50% - 3px); z-index: -1;} 
+#footer .f_btm select {width: 140px; height: 36px; padding: 6px 15px;border: 1px solid #7c7c7c;font-size: 14px;letter-spacing: -0.01em; background-color: transparent; cursor: pointer;}  
 @media screen and (max-width: 1200px) {
 	#footer{padding-top: 40px;padding-bottom: 50px;}
 	#footer .contact{flex-direction: column;align-items: flex-start;}

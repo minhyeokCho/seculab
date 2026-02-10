@@ -19,7 +19,7 @@ b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,the
 }
 button,input,textarea {
 	-webkit-text-size-adjust:none;
-	-webkit-appearance:none;
+	/* -webkit-appearance:none; */
 	-webkit-border-radius:0;
 	border:none;
 	border-radius:0;
@@ -95,6 +95,7 @@ a,input,button,select,label {
 	color:rgba(8,8,8,0.22);
 	font:inherit;
 	line-height:inherit;
+  font-weight: 700;
 }
 input:disabled::-webkit-input-placeholder {
 	color:rgba(8,8,8,0.22);
